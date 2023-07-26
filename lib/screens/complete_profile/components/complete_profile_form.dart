@@ -1,9 +1,6 @@
-import 'package:http/http.dart' as http;
-
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:shopy/components/loding_dialog.dart';
-import 'package:shopy/screens/otp/otp_screen.dart';
 import 'package:shopy/screens/sign_in/login_state.dart';
 import '../../../components/custom_surfix_icon.dart';
 import '../../../constants.dart';
@@ -105,7 +102,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
                     firstName != null &&
                     lastName != null) {
                   loading(context);
-                  print("sending post request ...");
+                  debugPrint("sending post request ...");
                   Invoker.post("api/v1/auth/register/", false, {
                     "email": widget.email,
                     "password": widget.password,
@@ -158,11 +155,11 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
                   //   Navigator.pushNamed(context, OtpScreen.routeName);
                   // });
                 } else {
-                  print("nope");
-                  print(lastName);
-                  print(firstName);
-                  print(phoneNumber);
-                  print(address);
+                  debugPrint("nope");
+                  debugPrint(lastName);
+                  debugPrint(firstName);
+                  debugPrint(phoneNumber);
+                  debugPrint(address);
                 }
               },
               style: ElevatedButton.styleFrom(

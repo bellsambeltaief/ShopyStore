@@ -1,20 +1,20 @@
-
-
 import 'package:flutter/material.dart';
 
-void loading(BuildContext context) async{
+void loading(BuildContext context) async {
   showDialog(
       barrierDismissible: false,
       context: context,
-      builder: (builder){
-        return Dialog(
+      builder: (builder) {
+        return const Dialog(
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20),
+            padding: EdgeInsets.symmetric(vertical: 20),
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              children: const [
+              children: [
                 CircularProgressIndicator(),
-                SizedBox(height: 15,),
+                SizedBox(
+                  height: 15,
+                ),
                 Text('Loading...')
               ],
             ),

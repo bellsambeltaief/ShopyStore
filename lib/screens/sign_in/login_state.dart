@@ -10,7 +10,7 @@ class LoginState extends ChangeNotifier {
   LoginStateValue get loginState => _loginState;
 
   login() {
-    print(_loginState);
+    debugPrint("$_loginState");
     _loginState = LoginStateValue.loggedIn;
     notifyListeners();
   }
