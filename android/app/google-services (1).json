@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "734853398402",
+    "project_id": "yeshop-ac6d2",
+    "storage_bucket": "yeshop-ac6d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734853398402:android:4ea5d16882294d9cc8199b",
+        "android_client_info": {
+          "package_name": "com.example.shopy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734853398402-nsp5js26lqmaoh58mfcv8butolpgn1p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXRvDeBGMRLqliRZGBggr4LlawrMENhEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734853398402-nsp5js26lqmaoh58mfcv8butolpgn1p4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
